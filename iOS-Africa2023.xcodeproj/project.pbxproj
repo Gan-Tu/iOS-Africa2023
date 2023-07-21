@@ -38,6 +38,7 @@
 		5901539B2A6790E9008D09CF /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5901539A2A6790E9008D09CF /* HeadingView.swift */; };
 		5901539D2A6791AC008D09CF /* InsetGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5901539C2A6791AC008D09CF /* InsetGalleryView.swift */; };
 		5901539F2A6A28B4008D09CF /* InsetFactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5901539E2A6A28B4008D09CF /* InsetFactView.swift */; };
+		590153A12A6A2AEF008D09CF /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590153A02A6A2AEF008D09CF /* InsetMapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		5901539A2A6790E9008D09CF /* HeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingView.swift; sourceTree = "<group>"; };
 		5901539C2A6791AC008D09CF /* InsetGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetGalleryView.swift; sourceTree = "<group>"; };
 		5901539E2A6A28B4008D09CF /* InsetFactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetFactView.swift; sourceTree = "<group>"; };
+		590153A02A6A2AEF008D09CF /* InsetMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 				5901539A2A6790E9008D09CF /* HeadingView.swift */,
 				5901539C2A6791AC008D09CF /* InsetGalleryView.swift */,
 				5901539E2A6A28B4008D09CF /* InsetFactView.swift */,
+				590153A02A6A2AEF008D09CF /* InsetMapView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				590153992A679003008D09CF /* AnimalDetailView.swift in Sources */,
 				590153952A678CD3008D09CF /* AnimalModel.swift in Sources */,
 				590153862A6784E5008D09CF /* GalleryView.swift in Sources */,
+				590153A12A6A2AEF008D09CF /* InsetMapView.swift in Sources */,
 				590153842A6784DD008D09CF /* MapView.swift in Sources */,
 				590153522A677E7E008D09CF /* ContentView.swift in Sources */,
 				590153502A677E7E008D09CF /* iOS_Africa2023App.swift in Sources */,
