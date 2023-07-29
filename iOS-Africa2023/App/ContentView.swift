@@ -12,7 +12,26 @@ struct ContentView: View {
     let haptics = UIImpactFeedbackGenerator(style: .medium)
     
     @State private var isGridViewActive: Bool = false
-    let gridLayout : [GridItem] = Array(repeating: GridItem(.flexible()), count: 2)
+//    let gridLayout : [GridItem] = Array(repeating: GridItem(.flexible()), count: 2)
+    @State private var gridLayout : [GridItem] = [GridItem(.flexible())]
+    @State private var gridColumn: Int = 1
+    @State private var toolbarIcon : String = "square.grid.2x2"
+    
+    func gridSwitch() {
+        gridLayout = Array(repeating: .init(.flexible()), count: gridLayout.count % 3 + 1)
+        gridColumn = gridLayout.count
+        
+        switch gridColumn {
+        case 1:
+            toolbarIcon = "square.grid.2x2"
+        case 2:
+            toolbarIcon = "square.grid.3x2"
+        case 3:
+            toolbarIcon = "rectangle.grid.1x2"
+        default:
+            toolbarIcon = "square.grid.2x2"
+        }
+    }
 
     var body: some View {
         NavigationView {
@@ -50,7 +69,7 @@ struct ContentView: View {
                     HStack(spacing: 16) {
                         Button(action: {
                             withAnimation(.easeIn) {
-                                isGridViewActive.toggle()
+                                isGridViewActive = false
                                 haptics.impactOccurred()
                             }
                         }) {
@@ -61,11 +80,12 @@ struct ContentView: View {
                         
                         Button(action: {
                             withAnimation(.easeIn) {
-                                isGridViewActive.toggle()
+                                isGridViewActive = true
                                 haptics.impactOccurred()
+                                gridSwitch()
                             }
                         }) {
-                            Image(systemName: "square.grid.2x2")
+                            Image(systemName: toolbarIcon)
                                 .font(.title2)
                                 .foregroundColor(isGridViewActive ? .accentColor : .primary)
                         } //: BUTTON
