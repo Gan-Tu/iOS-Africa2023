@@ -48,7 +48,7 @@ struct ContentView: View {
                             }) //: LINK
                         } //: LOOP
                     } //: LIST
-                    .listStyle(.plain)
+                    .listStyle(.inset)
                 } else {
                     ScrollView(.vertical) {
                         LazyVGrid(columns: gridLayout, alignment: .center, spacing: 20, content: {
@@ -61,6 +61,7 @@ struct ContentView: View {
                         .padding(10)
                     }
                 } //: CONDITION
+                
             } //: GROUP
             .navigationTitle("Africa")
             .navigationBarTitleDisplayMode(.large)

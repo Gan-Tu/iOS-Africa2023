@@ -50,6 +50,8 @@
 		59985B7A2A75B10400644868 /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59985B792A75B10400644868 /* AnimalGridItemView.swift */; };
 		59985B842A75B82100644868 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59985B832A75B82100644868 /* Stickers.xcassets */; };
 		59985B882A75B82100644868 /* Stickers.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 59985B812A75B81E00644868 /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		59985B8E2A75B8D000644868 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59985B8D2A75B8D000644868 /* CreditsView.swift */; };
+		59985B912A75B9CE00644868 /* CenterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59985B902A75B9CE00644868 /* CenterModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +125,8 @@
 		59985B812A75B81E00644868 /* Stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Stickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		59985B832A75B82100644868 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		59985B852A75B82100644868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59985B8D2A75B8D000644868 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		59985B902A75B9CE00644868 /* CenterModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +161,7 @@
 		5901534E2A677E7E008D09CF /* iOS-Africa2023 */ = {
 			isa = PBXGroup;
 			children = (
+				59985B8F2A75B9B000644868 /* Modifiers */,
 				590153AC2A6EC12F008D09CF /* Helper */,
 				5901538F2A678882008D09CF /* Extension */,
 				5901538C2A678812008D09CF /* Model */,
@@ -216,6 +221,7 @@
 				590153852A6784E5008D09CF /* GalleryView.swift */,
 				590153872A6784F6008D09CF /* MainView.swift */,
 				590153512A677E7E008D09CF /* ContentView.swift */,
+				59985B8D2A75B8D000644868 /* CreditsView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -274,6 +280,14 @@
 				59985B852A75B82100644868 /* Info.plist */,
 			);
 			path = Stickers;
+			sourceTree = "<group>";
+		};
+		59985B8F2A75B9B000644868 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				59985B902A75B9CE00644868 /* CenterModifier.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,8 +424,10 @@
 				59985B7A2A75B10400644868 /* AnimalGridItemView.swift in Sources */,
 				5901539D2A6791AC008D09CF /* InsetGalleryView.swift in Sources */,
 				590153A72A6A2FAE008D09CF /* VideoListItemView.swift in Sources */,
+				59985B8E2A75B8D000644868 /* CreditsView.swift in Sources */,
 				590153912A6788AF008D09CF /* CodableBundleExtension.swift in Sources */,
 				590153B42A6ECAA2008D09CF /* MotionAnimationView.swift in Sources */,
+				59985B912A75B9CE00644868 /* CenterModifier.swift in Sources */,
 				5901539B2A6790E9008D09CF /* HeadingView.swift in Sources */,
 				590153AB2A6EC107008D09CF /* VideoPlayerView.swift in Sources */,
 			);
@@ -480,7 +496,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -537,7 +553,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
